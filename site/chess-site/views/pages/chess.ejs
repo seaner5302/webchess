@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <meta chatset="UTF-8">
+        <meta name="author" content="Sean Dimick">
+
+        <%- include ("../partials/c_header.ejs") %>
+
+        <title>Chess</title>
+    </head>
+
+    <body>
+
+        <h1>Chess</h1>
+        <h2 id="tog">White's Turn</h2>
+
+        <ul>
+
+            <div class="divv" id="row8">
+                <li class="box" id="57">Brook</li>
+                <li class="box" id="58">Bknight</li>
+                <li class="box" id="59">Bbishop</li>
+                <li class="box" id="60">Bqueen</li>
+                <li class="box" id="61">Bking</li>
+                <li class="box" id="62">Bbishop</li>
+                <li class="box" id="63">Bknight</li>
+                <li class="box" id="64">Brook</li>
+            </div>
+            <div class="divv" id="row7">
+                <li class="box" id="49">Bpawn</li>
+                <li class="box" id="50">Bpawn</li>
+                <li class="box" id="51">Bpawn</li>
+                <li class="box" id="52">Bpawn</li>
+                <li class="box" id="53">Bpawn</li>
+                <li class="box" id="54">Bpawn</li>
+                <li class="box" id="55">Bpawn</li>
+                <li class="box" id="56">Bpawn</li>
+            </div>
+            <div class="divv" id="row6">
+                <li class="box" id="41">0</li>
+                <li class="box" id="42">0</li>
+                <li class="box" id="43">0</li>
+                <li class="box" id="44">0</li>
+                <li class="box" id="45">0</li>
+                <li class="box" id="46">0</li>
+                <li class="box" id="47">0</li>
+                <li class="box" id="48">0</li>
+            </div>
+            <div class="divv" id="row5">
+                <li class="box" id="33">0</li>
+                <li class="box" id="34">0</li>
+                <li class="box" id="35">0</li>
+                <li class="box" id="36">0</li>
+                <li class="box" id="37">0</li>
+                <li class="box" id="38">0</li>
+                <li class="box" id="39">0</li>
+                <li class="box" id="40">0</li>
+            </div>
+            <div class="divv" id="row4">
+                <li class="box" id="25">0</li>
+                <li class="box" id="26">0</li>
+                <li class="box" id="27">0</li>
+                <li class="box" id="28">0</li>
+                <li class="box" id="29">0</li>
+                <li class="box" id="30">0</li>
+                <li class="box" id="31">0</li>
+                <li class="box" id="32">0</li>
+            </div>
+            <div class="divv" id="row3">
+                <li class="box" id="17">0</li>
+                <li class="box" id="18">0</li>
+                <li class="box" id="19">0</li>
+                <li class="box" id="20">0</li>
+                <li class="box" id="21">0</li>
+                <li class="box" id="22">0</li>
+                <li class="box" id="23">0</li>
+                <li class="box" id="24">0</li>
+            </div>
+    
+            <div class="divv" id="row2">
+                <li class="box Wpawn" id="9">Wpawn</li>
+                <li class="box Wpawn" id="10">Wpawn</li>
+                <li class="box Wpawn" id="11">Wpawn</li>
+                <li class="box Wpawn" id="12">Wpawn</li>
+                <li class="box Wpawn" id="13">Wpawn</li>
+                <li class="box Wpawn" id="14">Wpawn</li>
+                <li class="box Wpawn" id="15">Wpawn</li>
+                <li class="box Wpawn" id="16">Wpawn</li>
+            </div>
+            <div class="divv" id="row1">
+                <li class="box" id="1">Wrook</li>
+                <li class="box" id="2">Wknight</li>
+                <li class="box" id="3">Wbishop</li>
+                <li class="box" id="4">Wqueen</li>
+                <li class="box" id="5">Wking</li>
+                <li class="box" id="6">Wbishop</li>
+                <li class="box" id="7">Wknight</li>
+                <li class="box" id="8">Wrook</li>
+            </div>
+        </ul>
+
+        <button onclick="sendState()">SEND BOARD STATE!</button>
+
+        <script src="chess.js"></script>
+    </body>
+</html>
